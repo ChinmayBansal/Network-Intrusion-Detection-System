@@ -1,0 +1,5 @@
+# Virtual Environment
+/nids
+
+# Checkpoints
+notebooks/.ipynb_checkpoints
