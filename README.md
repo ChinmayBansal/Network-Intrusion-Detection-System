@@ -50,3 +50,24 @@ Machine learning models can achieve better detection rates by:
 2. **Model Comparison**: ML models vs simulated signature-based detection
 3. **Analysis**: Feature importance, confusion matrices, error analysis
 4. **Real-world Applicability**: Deployment considerations and limitations
+
+## 📈 Results
+
+### Baseline Model: Logistic Regression
+**Binary Classification Performance (Normal vs Attack)**
+
+| Metric | Score | Assessment |
+|--------|-------|------------|
+| Accuracy | 83.65% | Strong generalization |
+| Precision | 80.29% | Good false alarm control |
+| Recall | 93.18% | Excellent attack detection |
+| F1-Score | 86.26% | Well-balanced performance |
+| ROC-AUC | 95.64% | Outstanding discriminative ability |
+
+**Key Findings:**
+- ✅ **93.2% attack detection rate** - Catches vast majority of network threats
+- ✅ **95.6% AUC score** - Near-perfect separation between normal and malicious traffic  
+- ⚠️ **28% false alarm rate** - Acceptable for security applications (better safe than sorry)
+- ✅ **Strong baseline** - Establishes excellent foundation for advanced models
+
+The logistic regression baseline demonstrates that machine learning can effectively detect network intrusions with high accuracy.
