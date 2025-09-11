@@ -71,3 +71,29 @@ Machine learning models can achieve better detection rates by:
 - ✅ **Strong baseline** - Establishes excellent foundation for advanced models
 
 The logistic regression baseline demonstrates that machine learning can effectively detect network intrusions with high accuracy.
+
+### Multi-Class Classification Performance (Attack Type Identification)
+
+**Enhanced Logistic Regression with Feature Engineering**
+
+| Metric | Achieved | What does it mean |
+|--------|----------|-------------------|
+| **Test Accuracy** | 65.45% | Correctly classifies 65% of network flows into specific attack types |
+| **Weighted Precision** | 83% | When model predicts a specific attack type, it's correct 83% of the time |
+| **Weighted Recall** | 65% | Model successfully identifies 65% of all actual attacks by their correct type |
+| **Weighted F1-Score** | 71% | Balanced performance measure across all 10 attack categories |
+| **Feature Engineering Impact** | +2.5% | Domain-specific features improved accuracy by 2.5 percentage points |
+| **Classes Handled** | 10 categories | Successfully distinguishes Normal + 9 attack types despite severe imbalance |
+
+**Key Findings:**
+- ✅ **Attack Type Specificity** - Model successfully identifies specific attack categories for targeted response
+- ✅ **Feature Engineering Success** - 13 domain-specific features significantly improved reconnaissance detection (+56%)
+- ⚠️ **Class Imbalance Challenge** - 430:1 ratio between most/least common classes creates detection variability
+- ✅ **Operational Value** - Provides actionable intelligence for security teams with attack-specific classifications
+
+**Attack Category Performance:**
+- **Best Detection**: Generic (96% recall), Worms (82% recall), Reconnaissance (74% recall)
+- **Challenging Classes**: Backdoor (8% recall), Analysis (63% recall but high false positives)
+- **High Precision**: Normal (98%), Generic (99%), Exploits (78%)
+
+The multi-class model trades some overall accuracy for attack type granularity, providing security teams with specific threat intelligence for incident response and threat hunting.
